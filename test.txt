@@ -14,7 +14,7 @@ changes 1
 Added on Editor
 Branch dev900
 Author dev900
-changes 7.6
+changes 7.7
 
 Branch test
 changes 0
