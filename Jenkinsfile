@@ -4,7 +4,7 @@ pipeline {
     agent any
     
     stages {
-        stage('Build: Run Simple.bat') {
+        stage('Build') {
             steps {
                 echo 'Building..'
                 echo 'This sample is from the following webpage'
