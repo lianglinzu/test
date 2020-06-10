@@ -4,20 +4,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Pre-build (Manually)') {
-            input {
-                message "Continue to next step?"
-                ok "Yes"
-                submitter "submitter"
-                parameters {
-                    string(name: 'Signature', defaultValue: 'Mr Jenkins', description: 'Signature')
-                }
-            }
-            steps {
-                echo "The following steps have been permitted by ${Signature}"
-            }
-        }
-
         stage('Build: Run Simple.bat') {
             steps {
                 echo 'Building..'
